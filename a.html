@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>TrucLA</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header" onclick="toggleInfo('nameInfo')">
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                <li class="list-group-item" id="nameField"><strong onclick="toggleInfo('nameInfo')">Public key (click me):</strong> <span id="nameInfo" style="display: none;">ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDMv/+UtT92Bc5cVaPY//62wcGaw7nuBthCIPXhXdqQsPmDVSM0bJvWGUjNok5IFIbNXxwXS7DXdoJyxUAZaskaMVmSfn6XZSMBxPWK+Pjw7SlA8RELveY96IBg/mE37nLMoHHmNKNN0uGfzmsFub8Cr+F2KCwKxyyjH0FjZbxQY/GfzBAhUP5UrIRZ03fWVdEzZNzyQiXpaGNAMo35ugpGmsD472lCyNJ1xeuiS3dW2374kU1razr+BVeSEMFntsWDO5iEMhyILx6d8yd9GvxJGQ4RrUx8R2Tef7JZg7nOHYdbJk917xsvOS3DxXmFWr7MVH9ew6mdyz1LDU2eRCfHFNSL3hw4nDDDSeDTPYTbwlaRmd5TIxzbAjGpJZ8LQktZVYMXiV+MpO1AYpMQifkpy0MXKD4gAFIYrK+kJDbwRkSpjCg6sHBVzUDVQCLMW4YdTyEU54fSwzfNJLGAIslKeujmlJjc/4pY8KzKsvODB475117CeIh18K49c2PjoXc= Administrator@TrucLA
+                </span></li>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // Function to toggle the visibility of the information
+    function toggleInfo(infoId) {
+        var info = document.getElementById(infoId);
+        info.style.display = (info.style.display === 'none' || info.style.display === '') ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>
